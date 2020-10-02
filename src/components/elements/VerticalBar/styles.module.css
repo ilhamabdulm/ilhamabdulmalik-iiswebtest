@@ -1,0 +1,51 @@
+.vertical-chart {
+  /* background-color: red; */
+  height: inherit;
+}
+
+.vertical-chart > section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bar {
+  font-size: 0.85rem;
+  width: 1.35rem;
+  height: 12rem;
+  margin: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.bar:first-child {
+  margin-left: 0;
+}
+
+.fill {
+  display: block;
+  border-radius: 1.5rem;
+}
+
+.legend {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.legend > div {
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.circle {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}

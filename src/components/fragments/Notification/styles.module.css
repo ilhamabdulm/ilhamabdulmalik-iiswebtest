@@ -1,0 +1,23 @@
+.root {
+  width: 30rem;
+  height: 3.5rem;
+  background-color: #4339f2;
+  position: fixed;
+  bottom: 1.5rem;
+  left: 31rem;
+  display: flex;
+  visibility: hidden;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.root > * {
+  margin: 0 0.25rem;
+}
+
+.root > p {
+  color: #ffffff;
+  font-size: 1rem;
+}

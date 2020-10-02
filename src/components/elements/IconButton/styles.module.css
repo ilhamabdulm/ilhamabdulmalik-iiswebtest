@@ -1,0 +1,14 @@
+.button {
+  border: none;
+  min-width: 5rem;
+  padding: 0.25rem 0.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.button > img {
+  margin-right: 0.2rem;
+}

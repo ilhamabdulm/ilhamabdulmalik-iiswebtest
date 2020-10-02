@@ -1,0 +1,49 @@
+.bar {
+  width: 100%;
+  display: flex;
+  margin: 1.5rem 0;
+}
+
+.bar:first-child {
+  margin-top: 0;
+}
+
+.bar > p,
+footer > p {
+  width: 2rem;
+  margin-right: 2rem;
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+footer {
+  display: flex;
+}
+
+footer > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+footer > p {
+  display: block;
+  background-color: red;
+  height: 100%;
+}
+
+.overlay {
+  display: block;
+  width: 100%;
+  background-color: #ffe5d3;
+  border-radius: 1.5rem;
+}
+
+.fill {
+  display: block;
+  height: 100%;
+  background-color: #ff3a29;
+  border-radius: 1.5rem;
+}
