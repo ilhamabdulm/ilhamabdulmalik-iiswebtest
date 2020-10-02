@@ -13,3 +13,11 @@ export const selectAll = (state) => {
     return state.map((el) => ({ ...el, selected: false }));
   }
 };
+
+export const clearAllSelect = (state) => {
+  return state.map((el) => ({ ...el, selected: false }));
+};
+
+export const deletedSelectedTable = (state) => {
+  return state.filter((el) => !el.selected);
+};

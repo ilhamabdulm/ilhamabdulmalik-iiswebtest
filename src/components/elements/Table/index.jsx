@@ -25,7 +25,7 @@ export default function Table(props) {
 
 const TableRow = ({ column, data, rowAction }) => {
   return (
-    <tr className={styles["table-row"]}>
+    <tr className={styles["table-row"]} onClick={() => rowAction(data)}>
       {column.map((el) => {
         const key =
           typeof el.value === "string" ? el.value.toLowerCase() : null;

@@ -7,7 +7,12 @@ import HorizontalBar from "../../components/elements/HorizontalBar";
 import VerticalBar from "../../components/elements/VerticalBar";
 import Checkbox from "../../components/elements/Checkbox";
 
-import { selectRow, selectAll } from "./actions";
+import {
+  selectRow,
+  selectAll,
+  clearSelect,
+  deleteSelectedTable,
+} from "./actions";
 import Notification from "../../components/fragments/Notification";
 
 export default function Main() {
@@ -68,6 +73,8 @@ export default function Main() {
         />
       </section>
       <Notification
+        clearSelect={() => dispatch(clearSelect())}
+        deleteTable={() => dispatch(deleteSelectedTable())}
         open={tableData.findIndex((el) => el.selected) >= 0 ? true : false}
       />
     </main>

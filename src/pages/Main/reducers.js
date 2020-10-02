@@ -1,5 +1,15 @@
-import { SELECT_ALL, SELECT_ROW } from "./constants";
-import { changeSelected, selectAll } from "./utils";
+import {
+  CLEAR_SELECT,
+  DELETE_TABLE,
+  SELECT_ALL,
+  SELECT_ROW,
+} from "./constants";
+import {
+  changeSelected,
+  clearAllSelect,
+  deletedSelectedTable,
+  selectAll,
+} from "./utils";
 
 const initialState = {
   horizontalData: [
@@ -147,6 +157,16 @@ export default function reducer(state = initialState, action) {
       return {
         ...state,
         tableData: selectAll(state.tableData),
+      };
+    case CLEAR_SELECT:
+      return {
+        ...state,
+        tableData: clearAllSelect(state.tableData),
+      };
+    case DELETE_TABLE:
+      return {
+        ...state,
+        tableData: deletedSelectedTable(state.tableData),
       };
     default:
       return state;

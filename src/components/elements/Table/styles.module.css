@@ -36,6 +36,10 @@
   background-color: #ffffff;
 }
 
+.table-row {
+  cursor: pointer;
+}
+
 .table-row > td:first-child {
   border-top-left-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;
