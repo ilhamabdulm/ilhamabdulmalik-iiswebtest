@@ -25,12 +25,12 @@ export default function Table(props) {
 
 const TableRow = ({ column, data, rowAction }) => {
   return (
-    <tr className={styles["table-row"]} onClick={() => rowAction(data)}>
+    <tr className={styles["table-row"]}>
       {column.map((el) => {
         const key =
           typeof el.value === "string" ? el.value.toLowerCase() : null;
         return key ? (
-          <td>{data[key]}</td>
+          <td onClick={() => rowAction(data)}>{data[key]}</td>
         ) : (
           <td>
             <Checkbox
